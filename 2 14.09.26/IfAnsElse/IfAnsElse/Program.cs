@@ -12,13 +12,26 @@
             //need muutuja name sisse
             string name = Console.ReadLine();
 
+            //if ja else kontrollib, kas muutuja
+            //name on tühi või mitte
+
+            //Kui muutuja name on tühi, siis väljastab konsoolile
+            //teksti "Tere tundmatu! ERROR" ja teeb 4 piiksu
             if (name!="")
             { 
                 Console.WriteLine("Tere," + name);
             }
             else
             {
-                Console.WriteLine("Tere, tundmat");
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.WriteLine("Tere, tundmat! ERROR");
+                Console.Beep();
+                Thread.Sleep(1000);
+                Console.Beep();
+                Thread.Sleep(1000);
+                Console.Beep();
+                Thread.Sleep(1000);
+
             }
         }
     }
