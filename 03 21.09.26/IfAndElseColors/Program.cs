@@ -10,17 +10,27 @@
             Console.WriteLine("Värvide valikus on: red,blue,green ja white");
             Console.WriteLine("Peab käsitlema juhust, kus vastaja ei sisesta" + " eelpool sisestatud värvi");
 
-            string input = Console.ReadLine();
-            int age = int.Parse(input);
-
-            if(age >= 18)
+            Console.WriteLine("Sisesta värv");
+            string varv = Console.ReadLine();
+            if (varv == "red")
             {
-                Console.ForegroundColor = ConsoleColor.Blue;
-
+                Console.WriteLine("See on punane");
+            }
+            else if (varv == "blue")
+            {
+                Console.WriteLine("See on sinine");
+            }
+            else if (varv == "green")
+            {
+                Console.WriteLine("See on roheline");
+            }
+            else if (varv == "white")
+            {
+                Console.WriteLine("see on valge");
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("See on suvaline värv");
             }
         }
     }
