@@ -28,7 +28,7 @@ class Program
                     break;
 
                 case 3:
-                    Console.WriteLine("Miau");
+                    Miau();
                     Console.WriteLine("Meetod kutsuti välja");
                     break;
             }
@@ -36,5 +36,8 @@ class Program
             Console.WriteLine("\nVajuta Enter, et jätkata...");
             Console.ReadLine();
         }
+    }static void Miau()
+    {
+        Console.WriteLine("Miau");
     }
 }
